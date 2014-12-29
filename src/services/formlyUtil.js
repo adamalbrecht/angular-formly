@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('formly.render')
 .factory('formlyUtil', function() {
 	return {

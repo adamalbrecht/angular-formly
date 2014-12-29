@@ -248,6 +248,7 @@ angular.module('formly.render')
 		}]
 	};
 });
+
 angular.module('formly.render')
 .provider('formlyConfig', function() {
 	'use strict';
@@ -296,6 +297,8 @@ angular.module('formly.render')
 	};
 	
 });
+'use strict';
+
 angular.module('formly.render')
 .factory('formlyUtil', function() {
 	return {
@@ -318,11 +321,5 @@ angular.module('formly.render')
 		}
 	}
 });
-angular.module('formly.render').run(['$templateCache', function($templateCache) {
-  'use strict';
 
-  $templateCache.put('directives/formly-form.html',
-    "<ng-form class=formly role=form><formly-field ng-repeat=\"field in fields\" class=formly-field options=field form-result=result fields=fields form=formOnParentScope form-id=options.uniqueFormId ng-if=!field.hide index=$index></formly-field><div ng-transclude></div></ng-form>"
-  );
-
-}]);
+angular.module("formly.render").run(["$templateCache", function($templateCache) {$templateCache.put("directives/formly-form.html","<ng-form class=formly role=form><formly-field ng-repeat=\"field in fields\" class=formly-field options=field form-result=result fields=fields form=formOnParentScope form-id=options.uniqueFormId ng-if=!field.hide index=$index></formly-field><div ng-transclude=\"\"></div></ng-form>");}]);

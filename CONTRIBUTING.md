@@ -20,17 +20,17 @@ Please do the following:
 
 1. `git checkout master`
 	1. run `npm install && bower install`
-	2. test your code using `grunt dev` which hosts the app at `http://localhost:4000`
+	2. test your code using `npm run test`
 	3. commit your changes
 3. update README, CHANGELOG, bower.json, and do any other final polishing to prepare for publishing
 	1. git commit changes
 
-*Note:* There's a symlink for `src` and `bower_components` in the `demo` and `tests` folders. Just FYI...
+*Note:* There's a symlink for `src` and `bower_components` in the `demo` folder. Just FYI...
 
-### Grunt targets
-* `grunt dev`: Creates a server for testing at `http://0.0.0.0:4000`
-* `grunt build`: Creates the dist
-* `grunt publish`: Copies the src folder and bower_components to gh-pages
+### Gulp targets
+* `gulp dev`: Creates a server for testing at `http://0.0.0.0:4000`
+* `gulp build`: Creates the dist
+* `gulp publish`: Copies the src folder and bower_components to gh-pages
 
 ### What do you need help with?
 
